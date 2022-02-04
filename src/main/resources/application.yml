@@ -1,0 +1,17 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: person-service
+  profiles:
+    active: dev
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://service-registry:8761/eureka/
+  instance:
+    prefer-ip-address: true
