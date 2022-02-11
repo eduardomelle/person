@@ -21,4 +21,5 @@ public class PersonApplication {
 		SpringApplication.run(PersonApplication.class, args);
 	}
 
+	
 }
