@@ -15,11 +15,9 @@ public class PersonResource {
 
   @GetMapping("/name")
   public String getName() {
-    String telefone = restTemplate.getForObject("http://dante-service/dante/phone", String.class);
+    String telefone = restTemplate.getForObject("http://DANTE-SERVICE/dante/phone", String.class);
 
     return "Eduardo" + telefone;
   }
-
-
 
 }
